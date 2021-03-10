@@ -21,7 +21,7 @@ app.use(function(req, res, next) {
 })
 
 const Router = require('./routes/route1')
-app.use('/aliens', Router)
+app.use('/endpoint1', Router)
 
 app.listen(PORT, () => {
     console.log('Server Started')

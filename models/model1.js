@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 
-const alienSchema = new mongoose.Schema({
+const dbSchema = new mongoose.Schema({
 
     name: {
         type: String,
@@ -14,4 +14,4 @@ const alienSchema = new mongoose.Schema({
 
 })
 
-module.exports = mongoose.model('Model', alienSchema)
+module.exports = mongoose.model('tableName', dbSchema)
